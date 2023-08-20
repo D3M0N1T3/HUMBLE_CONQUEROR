@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #canvas {
+        border: 1px solid black;
+      }
+
+      .inputs {
+        display: flex;
+        position: fixed;
+        margin: 10px;
+      }
+
+      #number,
+      #text {
+        /* position: fixed; */
+        margin: 10px;
+        top: 10px;
+        left: 10px;
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      #button,
+      #reset {
+        /* position: fixed; */
+        margin: 10px;
+        border: none;
+        border-radius: 0;
+        padding: 10px;
+      }
+
+      #label {
+        display: block;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="inputs">
+      <div class="label">
+        <label for="number" id="label">Pen Width:</label>
+        <input type="number" id="number" name="number" />
+      </div>
+
+      <div class="label">
+        <label for="text" id="label">Color:</label>
+        <input type="text" id="text" name="text" />
+      </div>
+
+      <input
+        type="button"
+        value="SUBMIT"
+        onclick="drawing()"
+        id="button"
+        name="button"
+      />
+      <input type="button" value="RESET" id="reset" name="reset" />
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <script src="./index.js"></script>
+  </body>
+</html>

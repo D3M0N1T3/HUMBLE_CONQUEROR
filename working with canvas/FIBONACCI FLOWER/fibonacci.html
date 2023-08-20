@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIBONACCI FLOWER</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      #canvas {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      #button {
+        position: fixed;
+        padding: 10px;
+        margin: 10px;
+        color: red;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: bolder;
+        border: 2px solid orangered;
+      }
+
+      #demo {
+        position: fixed;
+        padding: 10px;
+        margin: 10px;
+        color: red;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: bolder;
+        /* border: 2px solid orangered; */
+        transform: translateY(50px);
+      }
+
+      #demo::selection {
+        color: black;
+        background-color: aliceblue;
+      }
+
+      /* #form {
+        position: fixed;
+        padding: 10px;
+        margin: 10px;
+        color: red;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: bolder;
+        border: 2px solid orangered;
+        transform: translateY(50px);
+      } */
+    </style>
+  </head>
+  <body>
+    <button id="button">SUBMIT</button>
+    <p id="demo"></p>
+    <!-- <input type="number" id="form" /> -->
+    <canvas id="canvas"> Is Not Supported By Your Browser </canvas>
+    <script src="./fibonacci.js"></script>
+  </body>
+</html>

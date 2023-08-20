@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#canvas{
+    border: 7px solid black;
+}
+
+.txt {
+    display: flex;
+    position: fixed;
+    margin: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: monospace;
+    text-align: center;
+    /* top: 5000px; */
+    justify-content: center;
+    /* right: 50%; */
+    /* left: 30%; */
+    color: black;
+    /* width: 100%; */
+    text-decoration: underline;
+    text-transform: uppercase;
+    background: linear-gradient(to top, black, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
